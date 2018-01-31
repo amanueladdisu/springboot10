@@ -18,13 +18,13 @@ public class HomeController {
     CourseRepository courseRepository;
 
     @RequestMapping("/")
-    public String listCourse(Model model){
+    public String listCourses(Model model){
         model.addAttribute("courses", courseRepository.findAll());
         return "list";
     }
 
     @GetMapping("/add")
-    public String courseForm (Model model){
+    public String courseForm(Model model){
         model.addAttribute("course", new Course());
         return "courseform";
     }

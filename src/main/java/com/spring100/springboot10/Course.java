@@ -28,7 +28,7 @@ public class Course {
 
     @NotNull
     @Min(3)
-    private String credit;
+    private int credit;
 
     public long getId() {
         return id;
@@ -62,11 +62,11 @@ public class Course {
         this.description = description;
     }
 
-    public String getCredit() {
+    public int getCredit() {
         return credit;
     }
 
-    public void setCredit(String credit) {
+    public void setCredit(int credit) {
         this.credit = credit;
     }
 }
